@@ -1,0 +1,16 @@
+    <script type="module" src="{{ '/assets/vendor/@ionic/core/dist/ionic/ionic.esm.js' | relative_url }}"></script>
+    <script nomodule src="{{ '/assets/vendor/@ionic/core/dist/ionic/ionic.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/vendor/@ionic/core/css/ionic.bundle.css' | relative_url }}" />
+
+    <script type="module">
+      import { alertController } from "{{ '/assets/vendor/@ionic/core/dist/ionic/index.esm.js' | relative_url }}";
+      window.alertController = alertController;
+    </script>
+  <script type="module">
+    import { toastController } from "{{ '/assets/vendor/@ionic/core/dist/ionic/index.esm.js' | relative_url }}";
+    window.toastController = toastController;
+  </script>
+  <script type="module">
+    import { modalController } from "{{ '/assets/vendor/@ionic/core/dist/ionic/index.esm.js' | relative_url }}";
+    window.modalController = modalController;
+  </script>

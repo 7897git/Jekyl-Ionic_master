@@ -1,0 +1,129 @@
+.container { max-width: 1024px; margin: auto; }
+
+.hiden { display: none; }
+
+.flex { display: flex; align-items: center; justify-content: space-between; }
+
+.mobile-show { display: none; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .mobile-show { display: block; } }
+
+.mobile-hide { display: block; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .mobile-hide { display: none; } }
+
+/* Dark Colors ------------------ */
+body.darkmode { --ion-color-primary: #428cff; --ion-color-primary-rgb: 66, 140, 255; --ion-color-primary-contrast: #ffffff; --ion-color-primary-contrast-rgb: 255, 255, 255; --ion-color-primary-shade: #3a7be0; --ion-color-primary-tint: #5598ff; --ion-color-secondary: #50c8ff; --ion-color-secondary-rgb: 80, 200, 255; --ion-color-secondary-contrast: #ffffff; --ion-color-secondary-contrast-rgb: 255, 255, 255; --ion-color-secondary-shade: #46b0e0; --ion-color-secondary-tint: #62ceff; --ion-color-tertiary: #6a64ff; --ion-color-tertiary-rgb: 106, 100, 255; --ion-color-tertiary-contrast: #ffffff; --ion-color-tertiary-contrast-rgb: 255, 255, 255; --ion-color-tertiary-shade: #5d58e0; --ion-color-tertiary-tint: #7974ff; --ion-color-success: #2fdf75; --ion-color-success-rgb: 47, 223, 117; --ion-color-success-contrast: #000000; --ion-color-success-contrast-rgb: 0, 0, 0; --ion-color-success-shade: #29c467; --ion-color-success-tint: #44e283; --ion-color-warning: #ffd534; --ion-color-warning-rgb: 255, 213, 52; --ion-color-warning-contrast: #000000; --ion-color-warning-contrast-rgb: 0, 0, 0; --ion-color-warning-shade: #e0bb2e; --ion-color-warning-tint: #ffd948; --ion-color-danger: #ff4961; --ion-color-danger-rgb: 255, 73, 97; --ion-color-danger-contrast: #ffffff; --ion-color-danger-contrast-rgb: 255, 255, 255; --ion-color-danger-shade: #e04055; --ion-color-danger-tint: #ff5b71; --ion-color-dark: #f4f5f8; --ion-color-dark-rgb: 244, 245, 248; --ion-color-dark-contrast: #000000; --ion-color-dark-contrast-rgb: 0, 0, 0; --ion-color-dark-shade: #d7d8da; --ion-color-dark-tint: #f5f6f9; --ion-color-medium: #989aa2; --ion-color-medium-rgb: 152, 154, 162; --ion-color-medium-contrast: #000000; --ion-color-medium-contrast-rgb: 0, 0, 0; --ion-color-medium-shade: #86888f; --ion-color-medium-tint: #a2a4ab; --ion-color-light: #222428; --ion-color-light-rgb: 34, 36, 40; --ion-color-light-contrast: #ffffff; --ion-color-light-contrast-rgb: 255, 255, 255; --ion-color-light-shade: #1e2023; --ion-color-light-tint: #383a3e; }
+
+/* iOS Dark Theme ------------------- */
+.ios body.darkmode { --ion-background-color: #000000; --ion-background-color-rgb: 0, 0, 0; --ion-text-color: #ffffff; --ion-text-color-rgb: 255, 255, 255; --ion-color-step-50: #0d0d0d; --ion-color-step-100: #1a1a1a; --ion-color-step-150: #262626; --ion-color-step-200: #333333; --ion-color-step-250: #404040; --ion-color-step-300: #4d4d4d; --ion-color-step-350: #595959; --ion-color-step-400: #666666; --ion-color-step-450: #737373; --ion-color-step-500: #808080; --ion-color-step-550: #8c8c8c; --ion-color-step-600: #999999; --ion-color-step-650: #a6a6a6; --ion-color-step-700: #b3b3b3; --ion-color-step-750: #bfbfbf; --ion-color-step-800: #cccccc; --ion-color-step-850: #d9d9d9; --ion-color-step-900: #e6e6e6; --ion-color-step-950: #f2f2f2; --ion-toolbar-background: #0d0d0d; --ion-item-background: #1c1c1c; --ion-item-background-activated: #313131; }
+
+/* Material Design Dark Theme ------------------------------ */
+.md body.darkmode { --ion-background-color: #121212; --ion-background-color-rgb: 18, 18, 18; --ion-text-color: #ffffff; --ion-text-color-rgb: 255, 255, 255; --ion-border-color: #222222; --ion-color-step-50: #1e1e1e; --ion-color-step-100: #2a2a2a; --ion-color-step-150: #363636; --ion-color-step-200: #414141; --ion-color-step-250: #4d4d4d; --ion-color-step-300: #595959; --ion-color-step-350: #656565; --ion-color-step-400: #717171; --ion-color-step-450: #7d7d7d; --ion-color-step-500: #898989; --ion-color-step-550: #949494; --ion-color-step-600: #a0a0a0; --ion-color-step-650: #acacac; --ion-color-step-700: #b8b8b8; --ion-color-step-750: #c4c4c4; --ion-color-step-800: #d0d0d0; --ion-color-step-850: #dbdbdb; --ion-color-step-900: #e7e7e7; --ion-color-step-950: #f3f3f3; --ion-item-background: #1a1b1e; }
+
+/* Optional CSS, this is added for the flashing that happens when toggling between themes */
+ion-item { --transition: none; }
+
+ion-slides { height: 100%; }
+
+.swiper-slide { display: block; }
+
+.swiper-slide h2 { margin-top: 2.8rem; }
+
+.swiper-slide img { width: 192px; max-height: 50%; max-width: 80%; margin: 60px 0 40px; pointer-events: none; }
+
+b { font-weight: 500; }
+
+p { padding: 0 40px; font-size: 14px; line-height: 1.5; color: var(--ion-color-step-600, #60646b); }
+
+p b { color: var(--ion-text-color, #000000); }
+
+.index_devider { height: 10%; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .index_devider { height: 25%; } }
+
+.badge { position: absolute; top: -6px; right: -6px; border-radius: 50px; font-size: 11px; padding: 2px 4px; }
+
+.header-padding { padding: 0 10px; }
+
+.posts { width: auto; margin: 10px auto; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr; animation: fade-up 0.7s ease-out forwards running; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .posts { grid-template-columns: 1fr 1fr; padding: 5px; } }
+
+.posts .img_thumb { object-fit: cover; height: 100%; width: 100%; object-position: center; }
+
+.posts .img_post { display: flex; align-items: center; justify-content: center; align-content: center; }
+
+.posts .img_post .overlay { position: absolute; width: 120px; height: 120px; border-radius: 50%; background-color: #00000085; display: flex; align-items: center; justify-content: center; }
+
+.posts .img_post .overlay::before { content: 'HABIS'; color: #fff; font-weight: bolder; }
+
+.posts a.fav_btn { color: #00000066; position: absolute; right: 0; top: 0; font-size: 25px; padding: 7px 7px 0 7px; background: #f4f5f885; border-radius: 100%; margin: 5px; cursor: pointer; }
+
+.posts span.clicked { color: crimson; font-weight: bold; }
+
+.posts .shop_header { padding: 5px 10px; text-align: center; }
+
+.posts .shop_header .subtitle { margin-bottom: 10px; }
+
+.posts .shop_header .diskon { text-shadow: 2px 2px 3px #3880ff8f; }
+
+.posts .shop_header .price { text-shadow: 2px 2px 3px #3880ff8f; margin-bottom: 15px; }
+
+.posts .shop_header .sale { text-decoration: line-through; color: crimson; font-size: 13px; text-shadow: none; }
+
+.posts .shop_header .nosale { height: 31px; }
+
+.posts .shop_header .price::before, .posts .shop_header .diskon::before { content: 'IDR. '; }
+
+.posts .shop_header .price::after, .posts .shop_header .diskon::after { content: ',00'; }
+
+.posts .entry { padding: 0 8px 5px; }
+
+.posts .shop_content { display: flex; justify-content: space-between; align-items: center; }
+
+.post_product { display: flex; flex-wrap: nowrap; margin: auto; }
+
+.post_product .img_product { max-width: 512px; }
+
+.post_product .img_product .product_img { width: 100%; }
+
+.post_product .product_page { display: inline-flex; flex-wrap: nowrap; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .post_product .product_page { flex-wrap: wrap; } }
+
+.post_product .detail_product { width: 512px; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .post_product .detail_product { width: 100%; } }
+
+.post_product .detail_product a.fav_btn { color: #00000066; position: absolute; right: 0; top: 0; font-size: 25px; padding: 7px 7px 0 7px; background: #f4f5f885; border-radius: 100%; margin: 5px; cursor: pointer; }
+
+.post_product .detail_product span.clicked { color: crimson; font-weight: bold; }
+
+.post_product .style-picker { display: inline-flex; grid-gap: 10px; flex-wrap: wrap; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .post_product .style-picker { flex-wrap: wrap; } }
+
+.post_product .entry-description { margin-top: 20px; max-height: 165px; overflow: auto; }
+
+.post_product .btn-grup_order { display: flex; align-items: center; justify-content: flex-end; }
+
+.post_product .app-description-text { margin: 0px; position: absolute; bottom: 0px; width: 46%; z-index: 999; box-shadow: 0px -5px 20px -2px #7373739e; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .post_product .app-description-text { left: 0; width: 100%; } }
+
+.post_product .space { height: 13%; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .post_product .space { height: 1%; } }
+
+.post_product #input_div { display: flex; margin: 15px 0px; align-items: center; justify-content: space-between; }
+
+.post_product .input-groupQ { display: flex; width: 50%; border: 1px solid; border-radius: 25px; align-items: center; align-content: center; }
+
+.post_product .item_model { display: block; padding: 10px 40px; border-radius: 25px; }
+
+.post_product .item_Quantity { width: 100%; text-align: center; background: transparent; font-weight: 700; border: none; margin-right: -16px; }
+
+@media (min-width: 320px) and (max-width: 767.98px) { .post_product .item_Quantity { margin-right: 0px; } }
+
+/*# sourceMappingURL=main.css.map */

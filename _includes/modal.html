@@ -1,0 +1,52 @@
+<ion-modal  trigger="trigger-cart" id="Cart">
+<ion-modal-header collapse="fade" translucent="true">
+        <ion-toolbar color="primary">
+<ion-title>Keranjang Belanja</ion-title>
+    <ion-buttons slot="end">
+      <ion-button onClick="dismissCart()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+        </ion-toolbar>
+     </ion-modal-header>
+<ion-content>
+<style>.keranjang-box .simpleCart_items {max-height: 330px!important;padding: 10px;}@media only screen and (max-width:767px){.keranjang-box .simpleCart_items {max-height: 640px!important;}}</style>
+    {% include keranjang.html %}
+</ion-content>
+</ion-modal>
+
+<ion-modal trigger="trigger-wa" id="sheetOrder">
+<ion-modal-header collapse="fade" translucent="true">
+        <ion-toolbar color="success">
+<ion-title>WhatsApp Kontak</ion-title>
+    <ion-buttons slot="end">
+      <ion-button onClick="dismissWa()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+        </ion-toolbar>
+     </ion-modal-header>
+<ion-content padding="ion-padding">
+    <ion-list>
+      <ion-list-header>
+      <ion-label>
+          Ada pertanyaan? lengkapi data berikut!
+      </ion-label>
+    </ion-list-header>
+<form style="width:100%;border-radius: 5px;" validate-form id='whatsapp'>
+<input class='pertanyaan' id='nomorAdmin' type='hidden'/>
+        <ion-item>
+          <ion-label position="floating">Nama Lengkap</ion-label>
+            <ion-input class='nama wajib' type="text" highlight-color="success" placeholder="Nama Lengkap"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Pertanyaan</ion-label>
+            <ion-textarea class='tanya wajib' type="text" placeholder="Pertanyaan"></ion-textarea>
+        </ion-item>
+</ion-list>
+        <div class="mb-0 text-right">
+            <a type="button" class="sendWAclik kirim" style="margin-right:10px;color:#07bc4c"><ion-icon slot="icon-only" class="wa" name="paper-plane-outline" style="position:relative;margin-bottom:0px;margin-top:25px;height:34px;width:34px;float:right;bottom:0;right:20px;z-index:40;"></ion-icon></a>
+        </div>
+    </form>
+</ion-content>
+</ion-modal>

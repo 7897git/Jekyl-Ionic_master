@@ -1,0 +1,39 @@
+      <ion-header {% if page.url == '/' %}style="display:none;"{% endif %} collapse="fade" translucent="true">
+        <ion-toolbar class="header-padding">
+        {% if page.url == '/blog/' or page.url == '/product/'  %}
+          <ion-chip color="primary"{% if page.url == '/product/' %} onclick="myBlog()"{% elsif page.url == '/blog/' %} onclick="myProduct()"{% endif %} slot="start">
+        {% endif %}
+        {% if page.url == '/product/' or page.url == '/blog/' %}
+            <ion-avatar>
+            <img src="{{ site.avatar }}" width="24" height="24" alt="{{ site.title }}" />
+            </ion-avatar>
+            <ion-label>{{ site.title }}</ion-label>
+          </ion-chip>
+        {% endif %}
+        {% if page.layout == 'archive' or page.layout == 'post' or page.layout == 'shop'  %}
+            <ion-buttons slot="start">
+              <ion-button onclick="history.back()"><ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon></ion-button>
+            </ion-buttons>
+        {% endif %}
+        {% if page.url contains '/product/'  %}
+    <ion-buttons id="cart-menu" slot="end">
+      <ion-button id="trigger-cart">
+           <ion-badge color="danger" class="badge simpleCart_quantity"></ion-badge>
+            <ion-icon slot="icon-only" name="cart" color="primary"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+{% elsif page.url == '/blog/' %}
+    <ion-buttons slot="end">
+      <ion-button onclick="myProduct()">
+            <ion-badge color="danger" class="badge simpleCart_quantity"></ion-badge>
+         <ion-icon slot="icon-only" name="storefront" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+        {% endif %}
+    <ion-buttons slot="end">
+      <ion-button id="trigger-wa">
+         <ion-icon slot="icon-only" name="logo-whatsapp" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+        </ion-toolbar>
+      </ion-header>

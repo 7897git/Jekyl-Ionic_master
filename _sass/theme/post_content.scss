@@ -1,0 +1,86 @@
+.posts {
+    width: auto;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    animation: fade-up 0.7s ease-out forwards running;
+@include mobile {
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;}
+.img_thumb {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    }
+.img_post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    .overlay {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #00000085;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .overlay::before {
+    content: 'HABIS';
+    color: #fff;
+    font-weight: bolder;}
+}
+a.fav_btn {
+    color: #00000066;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+    padding: 7px 7px 0 7px;
+    background: #f4f5f885;
+    border-radius: 100%;
+    margin: 5px;
+    cursor: pointer;
+    }
+span.clicked {
+    color: crimson;
+    font-weight: bold;
+    }
+.shop_header {
+    padding: 5px 10px;
+    text-align: center;
+    .subtitle {
+        margin-bottom: 10px;
+        }
+    .diskon {
+        text-shadow: 2px 2px 3px #3880ff8f;}
+    .price {
+        text-shadow: 2px 2px 3px #3880ff8f;
+        margin-bottom: 15px;
+        }
+        .sale {
+            text-decoration: line-through;
+            color: crimson;
+            font-size: 13px;
+            text-shadow: none;
+        }
+        .nosale {
+            height: 31px;
+        }
+    .diskon {  }
+    .price::before, .diskon::before { content: 'IDR. ' }
+    .price::after, .diskon::after { content: ',00' }
+    }
+.entry {
+    padding: 0 8px 5px;
+}
+.shop_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}

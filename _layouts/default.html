@@ -1,0 +1,17 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+    {% include ion-head.html %}
+  <body>
+    <ion-app>
+    {% include ion-header.html %}
+        <ion-content {% if page.url == '/' %}fullscreen class="ion-padding" scroll-y="false"{% else %} class="main"{% endif %}>
+    {{ content }}
+        </ion-content>
+    </ion-app>
+    {% include modal.html %}
+    {% include javascript.html %}
+  </body>
+</html>

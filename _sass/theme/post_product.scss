@@ -1,0 +1,100 @@
+.post_product {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+.img_product {
+    max-width: 512px;
+    .product_img {
+        width: 100%;
+    }
+}
+    .product_page {
+        display: inline-flex;
+        flex-wrap: nowrap;
+    @include mobile {
+    flex-wrap: wrap;}
+    }
+    .detail_product {
+        width: 512px;
+    @include mobile {
+        width: 100%;}
+        a.fav_btn {
+            color: #00000066;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 25px;
+            padding: 7px 7px 0 7px;
+            background: #f4f5f885;
+            border-radius: 100%;
+            margin: 5px;
+            cursor: pointer;
+            }
+        span.clicked {
+            color: crimson;
+            font-weight: bold;
+            }
+        }
+    .style-picker {
+        display: inline-flex;
+        grid-gap: 10px;
+        flex-wrap: wrap;
+    @include mobile {
+        flex-wrap: wrap;}
+        }
+    .entry-description {
+        margin-top: 20px;
+        max-height: 165px;
+        overflow: auto;}
+    .btn-grup_order {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .app-description-text {
+        margin: 0px;
+        position: absolute;
+        bottom: 0px;
+        width: 46%;
+        z-index: 999;
+        box-shadow: 0px -5px 20px -2px #7373739e;
+@include mobile {
+    left: 0;
+    width: 100%;}
+    }
+    .space {
+        height: 13%;
+        @include mobile {
+        height: 1%;}
+    }
+
+    #input_div {
+        display: flex;
+        margin: 15px 0px;
+        align-items: center;
+        justify-content: space-between;}
+
+    .input-groupQ {
+        display: flex;
+        width: 50%;
+        border: 1px solid;
+        border-radius: 25px;
+        align-items: center;
+        align-content: center;
+    }
+.item_model {
+    display: block;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+.item_Quantity {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    font-weight: 700;
+    border: none;
+    margin-right: -16px;
+        @include mobile {
+    margin-right: 0px;}
+}
+}

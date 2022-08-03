@@ -1,0 +1,80 @@
+url: "https://plus62store.my.id"
+baseurl: ""
+title: "Plus62store"
+description: "Masker Bordir Tasikmalaya.."
+email: plus6store.info@gmail.com
+avatar: https://1.bp.blogspot.com/-1bWHHqO2Jt0/X2ZgjgIVRVI/AAAAAAAAFZ8/XCb6roqGxhIn-K34II1L8BuLDoAePrmsgCLcBGAsYHQ/s0/192x192.png
+dev: "nDang"
+ChainID: mumbai
+contract: 0x713c0d998D08CdD0aa26a52efed85EDB5FF96875
+twitter_username: x1666
+github_username:  7897git
+fb-pixel: 904845437026791
+fb-appID: 437300347340287
+fb-admin: 158878762428839
+fb-profile: 435671100899312
+fb-pages: 107881477662203
+signal-id: 23925364-ab76-466d-b529-44ea74b5d7c1
+safari-web-ID: web.onesignal.auto.0f4ef0fc-d020-4184-9066-253532c318fc
+G-verify: 
+Y-verify: 42c9b7a5a8c7355c
+
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-figure
+
+collections:
+  blogs:
+    output: true
+
+permalink: /product/:title/
+
+defaults:
+- scope:
+    type: posts
+  values:
+    layout: shop
+
+- scope:
+    type: checkout
+  values:
+    layout: checkout-page
+
+- scope:
+    type: cart
+  values:
+    layout: cart-page
+
+- scope:
+    type: pages
+  values:
+    layout: page
+
+- scope:
+    type: blogs
+  values:
+    layout: post
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: '/product/category/:name/'
+    tags: '/product/tag/:name/'
+
+jekyll-uglify:
+  harmony: true
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+exclude: [lib, config.rb, .sass-cache, Capfile, config, log, Rakefile, Rakefile.rb, tmp, Gemfile, Gemfile.lock, README.md, LICENSE.md, node_modules, gulpfile.js, package.json, package-lock.json]

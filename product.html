@@ -1,0 +1,12 @@
+---
+layout: default
+title: "Products"
+description: "Bordir Tasikmalaya"
+---
+            <div class="container">
+                <div class="posts">
+              {% for post in site.posts %}
+                {% include ion-post.html %}
+              {% endfor %}
+                </div>
+            </div>
